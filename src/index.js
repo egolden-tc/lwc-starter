@@ -1,9 +1,9 @@
 import { createElement, register } from 'lwc';
 import { registerWireService } from '@lwc/wire-service';
-import UiApp from 'ui/app';
+import MyApp from 'my/app';
 
 registerWireService(register);
 
-const app = createElement('my-app', { is: UiApp });
+const app = createElement('my-app', { is: MyApp });
 // eslint-disable-next-line @lwc/lwc/no-document-query
 document.querySelector('#main').appendChild(app);
